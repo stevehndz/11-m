@@ -58,7 +58,7 @@ const Music = () => {
                 ease: "easeInOut",
               },
             }}
-            className="w-[268px] h-[268px] lg:w-[428px] lg:h-[428px] xl:w-[468px] xl:h-[468px] relative"
+            className="w-[268px] h-[268px] lg:w-[428px] lg:h-[428px] xl:w-[468px] xl:h-[468px] mix-blend-hard-light relative"
           >
             <Image
               src={img}
