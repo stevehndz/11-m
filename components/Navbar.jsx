@@ -10,7 +10,11 @@ const links = [
   },
   {
     name: "para ti",
-    path: "/love",
+    path: "/hearts",
+  },
+  {
+    name: "cartita",
+    path: "/letter",
   },
   {
     name: "música",
