@@ -11,13 +11,10 @@ const RandomHearts = () => {
   const hearts = useRef([]);
 
   const getRandomPosition = () => {
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
-
     const minX = 50;
-    const maxX = windowWidth - 50;
+    const maxX = window.innerWidth - 50;
     const minY = 50;
-    const maxY = windowHeight - 50;
+    const maxY = window.innerHeight - 50;
 
     const randomX = Math.floor(Math.random() * (maxX - minX) + minX);
     const randomY = Math.floor(Math.random() * (maxY - minY) + minY);
@@ -39,7 +36,9 @@ const RandomHearts = () => {
   return (
     <div className="heart-container">
       <div className="flex justify-center items-center z-0 h-[calc(100vh-72px)] w-screen container">
-        <h1 className="font-extrabold text-4xl">Busca el corazon que tiene el regalo</h1>
+        <h1 className="font-extrabold text-4xl">
+          Busca el corazon que tiene el regalo
+        </h1>
       </div>
       {Array.from({ length: 8 }).map((_, index) => (
         <motion.div
@@ -67,7 +66,7 @@ const RandomHearts = () => {
                 className={`heart ${selectedHeart === index ? "selected" : ""}`}
                 style={{
                   fontSize: getRandomSize(),
-                  color: selectedHeart === index   ? "red" : "#f00",
+                  color: selectedHeart === index ? "red" : "#f00",
                 }}
               />
             </Link>
