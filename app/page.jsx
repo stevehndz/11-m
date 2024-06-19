@@ -91,15 +91,7 @@ export default function Home() {
                 size="lg"
                 className="bg-primary hover:bg-secondary-hover hover:text-white/90 font-bold text-xl lg:text-2xl"
               >
-                Heart Tap
-              </Button>
-            </Link>
-            <Link href="/letter">
-              <Button
-                size="lg"
-                className="bg-accent hover:bg-accent-hover hover:text-white/90 font-bold text-xl lg:text-2xl"
-              >
-                Cartita
+                Regalito
               </Button>
             </Link>
           </div>

@@ -62,7 +62,7 @@ const RandomHearts = () => {
           }}
         >
           {index === 1 ? (
-            <Link href="/love">
+            <Link href="/letter">
               <FaHeart
                 className={`heart ${selectedHeart === index ? "selected" : ""}`}
                 style={{
