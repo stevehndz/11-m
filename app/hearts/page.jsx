@@ -11,8 +11,8 @@ const RandomHearts = () => {
   const hearts = useRef([]);
 
   const getRandomPosition = () => {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+    let width = 1080;
+    let height = 1920;
 
     if (typeof window !== 'undefined') {
       width = window.innerWidth;
