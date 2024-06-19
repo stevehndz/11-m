@@ -11,10 +11,18 @@ const RandomHearts = () => {
   const hearts = useRef([]);
 
   const getRandomPosition = () => {
+    let width = 0;
+    let height = 0;
+
+    if (typeof window !== 'undefined') {
+      width = window.innerWidth;
+      height = window.innerHeight; 
+    }
+
     const minX = 50;
-    const maxX = window.innerWidth - 50;
+    const maxX = width - 50;
     const minY = 50;
-    const maxY = window.innerHeight - 50;
+    const maxY = height - 50;
 
     const randomX = Math.floor(Math.random() * (maxX - minX) + minX);
     const randomY = Math.floor(Math.random() * (maxY - minY) + minY);
